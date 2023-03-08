@@ -2,6 +2,8 @@ import React from "react";
 import Hero from "./Hero";
 import BoldTextSection from "./BoldTextSection";
 import SideSection from "./SideSection";
+import PortfolioSection from "./PortfolioSection";
+import ContactSection from "./ContactSection";
 
 const Home = () => {
   return (
@@ -25,6 +27,12 @@ const Home = () => {
         body="With our expertise in both traditional and modern architecture, we can provide a comprehensive range of services that will meet your exact requirements."
         image="/images/Side-Section-2.jpg"
       />
+      <BoldTextSection
+        mainText="Dream homes we brought to life"
+        minorText="Our Portfolio"
+      />
+      <PortfolioSection />
+      <ContactSection />
     </>
   );
 };
