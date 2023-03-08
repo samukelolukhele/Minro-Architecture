@@ -2,10 +2,16 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="w-full h-[90vh] bg-black">
-      <div className="container">
-        <div className="w-[460px] flex flex-column gap-4">
-          <h1 className="text-6xl ">Bring Your Vision To Life.</h1>
+    <div className="relative w-full h-[90vh] bg-[url(/images/hero.jpg)] bg-center bg-cover bg-no-repeat">
+      <div className="absolute bg-black opacity-50 h-full w-full z-2"></div>
+      <div className="relative container h-full flex items-center z-10">
+        <div className="w-[460px] flex flex-col gap-4 text-white">
+          <h1 className="text-6xl font-light">Bring Your Vision To Life.</h1>
+          <hr className="w-[360px] border-[1.5px] border-brand mb-4" />
+          <p className="font-extralight text-xl w-[400px]">
+            Our award-winning design team brings years of experience and
+            expertise to every project, ensuring that your vision comes to life.
+          </p>
         </div>
       </div>
     </div>
