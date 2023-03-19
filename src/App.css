@@ -15,10 +15,11 @@ body {
   background-color: #ebebeb;
 }
 
-@screen lg {
+@screen md {
   .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 40px;
   }
 }
 
