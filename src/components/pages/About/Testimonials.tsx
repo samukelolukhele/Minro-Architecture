@@ -38,16 +38,23 @@ const Testimonials = () => {
             </p>
             <Divider width="w-11/12" border="border-white" />
           </div>
-          <Slider classNames={{ slider: "slider !h-[276px]" }} infinite={true}>
+          <Slider
+            classNames={{
+              slider: "slider !h-[500px] md:!h-[276px]",
+              previousButton: "previousButton !left-0",
+              nextButton: "nextButton !right-0",
+            }}
+            infinite={true}
+          >
             {slides.map((slide, i) => (
               <div key={i}>
-                <div className="w-10/12 text-white gap-4 flex justify-between items-center inner">
+                <div className="w-10/12 text-white text-center md:text-left gap-4 flex flex-col md:flex-row justify-between items-center inner">
                   <img
                     src={slide.image}
                     className="w-[200px] aspect-square rounded-full bg-center object-cover"
                   />
-                  <div className="flex flex-col justify-center align-center">
-                    <div className="flex flex-col w-max gap-2">
+                  <div className="flex flex-col justify-center">
+                    <div className="flex flex-col items-center md:items-start w-max gap-2">
                       <h3 className="font-bold text-3xl">{slide.title}</h3>
                       <Divider border="border-white" width="w-10/12" />
                     </div>
