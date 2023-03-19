@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { CiMenuBurger } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai";
+import Logo from "./Logo";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -11,7 +12,7 @@ const Navbar = () => {
       <div className="container flex  text-2xl flex-wrap gap-6 items-center justify-between">
         <div className="">
           <Link className="font-logo" to="/">
-            Minro
+            <Logo className="w-32 hover:text-hover" />
           </Link>
         </div>
         <div
