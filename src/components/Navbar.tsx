@@ -7,7 +7,7 @@ const Navbar = () => {
   const [menu, setMenu] = useState(false);
 
   return (
-    <nav className="absolute z-[99] bg-brand w-full py-4 px-4 md:px-0 text-white">
+    <nav className="sticky z-[99] bg-brand w-full py-4 px-4 md:px-0 text-white">
       <div className="container flex  text-2xl flex-wrap gap-6 items-center justify-between">
         <div className="">
           <Link className="font-logo" to="/">
@@ -23,7 +23,7 @@ const Navbar = () => {
         <div
           className={`md:flex ${
             menu ? "flex" : "hidden"
-          }  gap-10 ease-in duration-500 font-light items-center `}
+          }  gap-10 text-xl ease-in duration-500 font-light items-center `}
         >
           <Link
             className="hover:text-hover"
