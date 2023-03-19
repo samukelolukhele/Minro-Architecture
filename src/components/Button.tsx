@@ -1,8 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-type BProps = { children: React.ReactNode; color: "primary" | "secondary" };
+type BProps = {
+  children: React.ReactNode;
+  color: "primary" | "secondary";
+  to: string;
+};
 
-const Button = ({ color = "primary", children }: BProps) => {
+const Button = ({ color = "primary", children, to }: BProps) => {
   const handleBtnColor = (color: string) => {
     if (color === "primary") {
       return "bg-brand";
@@ -12,9 +17,14 @@ const Button = ({ color = "primary", children }: BProps) => {
   };
 
   return (
-    <button className={`w-[120px] rounded ${handleBtnColor(color)} py-2`}>
+    <Link
+      to={to}
+      className={`w-[120px] text-center rounded text-white ${handleBtnColor(
+        color
+      )} py-2`}
+    >
       {children}
-    </button>
+    </Link>
   );
 };
 

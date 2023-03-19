@@ -14,8 +14,12 @@ const Hero = () => {
             expertise to every project, ensuring that your vision comes to life.
           </p>
           <div className="flex gap-4">
-            <Button color="primary">Contact</Button>
-            <Button color="secondary">Learn More</Button>
+            <Button to="/contact" color="primary">
+              Contact
+            </Button>
+            <Button to="/about" color="secondary">
+              Learn More
+            </Button>
           </div>
         </div>
       </div>

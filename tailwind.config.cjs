@@ -8,6 +8,11 @@ module.exports = {
         tDark: "#888888",
         tSecondary: "#4e4e4e",
         bDark: "#d9d9d9",
+        hover: "#413543",
+      },
+      fontFamily: {
+        main: ["Lato", "sans-serif"],
+        logo: ["Rammetto One", "cursive"],
       },
     },
   },
