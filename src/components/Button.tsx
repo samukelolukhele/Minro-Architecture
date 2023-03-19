@@ -5,9 +5,10 @@ type BProps = {
   children: React.ReactNode;
   color: "primary" | "secondary";
   to: string;
+  className?: string;
 };
 
-const Button = ({ color = "primary", children, to }: BProps) => {
+const Button = ({ color = "primary", children, className, to }: BProps) => {
   const handleBtnColor = (color: string) => {
     if (color === "primary") {
       return "bg-brand";
@@ -19,7 +20,7 @@ const Button = ({ color = "primary", children, to }: BProps) => {
   return (
     <Link
       to={to}
-      className={`w-[120px] text-center rounded text-white ${handleBtnColor(
+      className={`w-[120px] text-center rounded text-white ${className} ${handleBtnColor(
         color
       )} py-2`}
     >

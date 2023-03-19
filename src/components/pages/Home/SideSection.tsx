@@ -19,7 +19,7 @@ const SideSection = ({ direction, header, body, image }: SProps) => {
           <p className="text-tSecondary text-xl">{body}</p>
         </div>
         <img
-          className="bg-center object-cover w-full h-[50vh] md:h-full"
+          className="bg-center object-cover w-full h-[60vh] lg:h-[600px]"
           src={image}
           alt=""
         />

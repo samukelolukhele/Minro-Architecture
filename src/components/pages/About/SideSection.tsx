@@ -3,10 +3,10 @@ import Divider from "../../Divider";
 
 const SideSection = () => {
   return (
-    <div className="pt-10 pb-20 px-4 md:px-10 lg:px-0">
-      <div className="container !px-0">
+    <div className="pt-10 pb-20 px-4">
+      <div className="container">
         <div className="w-full flex items-center justify-center gap-6 flex-col  lg:flex-row lg:justify-between">
-          <div className="hidden md:inline-block w-[200px] h-[350px] aspect-spuare lg:inline-block bg-brand mr-[-240px]"></div>
+          <div className="hidden lg:inline-block w-[200px] h-[350px] aspect-spuare lg:inline-block bg-brand mr-[-240px]"></div>
           <img
             src="/images/About-1.jpg"
             alt=""
