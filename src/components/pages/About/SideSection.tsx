@@ -30,7 +30,7 @@ const SideSection = () => {
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="300"
-              className="text-tDark text-l lg:text-2xl"
+              className="text-tDark text-l lg:text-l"
             >
               From initial design through to implementation and completion, our
               team of professionals are here to provide a comprehensive solution

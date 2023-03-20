@@ -1,6 +1,9 @@
 import React from "react";
 import Divider from "../../Divider";
 import Slider from "react-animated-slider";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+const SliderComponent = Slider.default ? Slider.default : Slider;
 import "react-animated-slider/build/horizontal.css";
 import {
   IoArrowBackCircleOutline,
@@ -42,7 +45,7 @@ const Testimonials = () => {
             </p>
             <Divider width="w-11/12" border="border-white" />
           </div>
-          <Slider
+          <SliderComponent
             previousButton={<IoArrowBackCircleOutline />}
             nextButton={<IoArrowForwardCircleOutline />}
             classNames={{
@@ -73,7 +76,7 @@ const Testimonials = () => {
                 </div>
               </div>
             ))}
-          </Slider>
+          </SliderComponent>
         </div>
       </div>
     </div>

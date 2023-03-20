@@ -24,7 +24,7 @@ const Hero = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="300"
-            className="text-tDark text-l"
+            className="text-tDark lg:text-base"
           >
             We are proud to provide industry-leading expertise when it comes to
             architecture services. Our highly experienced experts have years of
