@@ -9,7 +9,7 @@ type IProps = {
 const Input = ({ className, onChange, placeholder }: IProps) => {
   return (
     <input
-      className={`rounded py-2 px-2 w-[300px] focus:border-tDark ${className}`}
+      className={`rounded py-2 px-2 w-max md:w-[300px] focus:border-tDark ${className}`}
       onChange={onChange}
       placeholder={placeholder}
       name={placeholder.toLowerCase()}

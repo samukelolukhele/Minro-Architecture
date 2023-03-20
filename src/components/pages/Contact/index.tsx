@@ -30,15 +30,15 @@ const Contact = () => {
   const closeModal = () => setModal(false);
 
   return (
-    <div className="relative overflow-y-scroll bg-[url(/images/Contact-bg.jpg)] flex items-center justify-center w-full bg-center h-[85vh] bg-cover">
-      {!modal && <Modal close={closeModal} bgClick={closeModal} />}
-      <div className="absolute bg-black opacity-40 w-full h-full" />
-      <div className="relative z-2 flex  h-[450px] w-10/12 lg:w-[700px] bg-black">
-        <div className="flex flex-col w-5/12 h-full text-white">
-          <div className="flex items-center justify-center h-5/6 bg-brand w-full">
+    <div className="relative overflow-y-scroll bg-[url(/images/Contact-bg.jpg)] flex items-center justify-center w-full bg-center h-screen md:min-h-screen md:h-auto py-10 bg-cover">
+      {modal && <Modal close={closeModal} bgClick={closeModal} />}
+      <div className="absolute opacity-40 w-full h-full bg-black" />
+      <div className="relative z-2 flex flex-col-reverse gap-10 md:gap-0 md:flex-row md:h-[450px] w-10/12 lg:w-[700px] ">
+        <div className="flex flex-col md:w-5/12 h-full text-white">
+          <div className="rounded-t-lg md:rounded-none flex items-center justify-center py-8 md:py-0 md:h-5/6 bg-brand w-full">
             <Logo className="w-[250px]" />
           </div>
-          <div className="flex flex-col justify-center items-center justify-evenly px-4 h-1/6 bg-black w-full">
+          <div className="rounded-b-lg md:rounded-none flex flex-col justify-center items-center justify-evenly px-4 py-4 md:py-0 md:h-1/6 bg-black w-full">
             <div className="flex items-center gap-2 text-xs">
               <AiOutlineMail />
               <p>info@minroarchitecture.co.za</p>
@@ -49,8 +49,8 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="w-7/12 h-full bg-bDark">
-          <form className="w-max h-full mx-10 flex flex-col items-start justify-center gap-6">
+        <div className="rounded md:rounded-none py-12 px-8 md:px-0 md:py-0 md:w-7/12 h-full bg-bDark">
+          <form className="w-max h-full mx-auto md:mx-10 flex flex-col items-start justify-center gap-6">
             <div className="flex flex-col gap-2">
               <label>Name</label>
               <Input placeholder="Name" onChange={handleData} />
