@@ -3,7 +3,7 @@ import Logo from "../../Logo";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsTelephone } from "react-icons/bs";
 import Input from "../../Input";
-import Button from "../../Button";
+import Modal from "../../Modal";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -12,18 +12,28 @@ const Contact = () => {
     message: ",",
   });
 
+  const [modal, setModal] = useState(false);
+
   const handleData = (e: React.ChangeEvent<any>) => {
     const { name, value } = e.target;
 
     return setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = () => {};
+  const handleSubmit = (e: React.ChangeEvent<any>) => {
+    e.preventDefault();
+    setModal(true);
+
+    //TODO: Add mailing function
+  };
+
+  const closeModal = () => setModal(false);
 
   return (
-    <div className="relative bg-[url(/images/Contact-bg.jpg)] flex items-center justify-center w-full bg-center h-[85vh] bg-cover">
+    <div className="relative overflow-y-scroll bg-[url(/images/Contact-bg.jpg)] flex items-center justify-center w-full bg-center h-[85vh] bg-cover">
+      {!modal && <Modal close={closeModal} bgClick={closeModal} />}
       <div className="absolute bg-black opacity-40 w-full h-full" />
-      <div className="relative z-2 flex h-[450px] w-[700px] bg-black">
+      <div className="relative z-2 flex  h-[450px] w-10/12 lg:w-[700px] bg-black">
         <div className="flex flex-col w-5/12 h-full text-white">
           <div className="flex items-center justify-center h-5/6 bg-brand w-full">
             <Logo className="w-[250px]" />
@@ -40,10 +50,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="w-7/12 h-full bg-bDark">
-          <form
-            className="w-max h-full mx-10 flex flex-col items-start justify-center gap-6"
-            action=""
-          >
+          <form className="w-max h-full mx-10 flex flex-col items-start justify-center gap-6">
             <div className="flex flex-col gap-2">
               <label>Name</label>
               <Input placeholder="Name" onChange={handleData} />
@@ -62,8 +69,9 @@ const Contact = () => {
               ></textarea>
             </div>
             <button
-              className="px-6 py-2 bg-brand rounded text-white"
+              className="px-6 py-2 bg-brand hover:bg-brandHover hover:scale-[1.1] rounded text-white"
               type="submit"
+              onClick={handleSubmit}
             >
               Send
             </button>
