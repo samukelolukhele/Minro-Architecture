@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { CiMenuBurger } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai";
@@ -8,11 +8,11 @@ const Navbar = () => {
   const [menu, setMenu] = useState(false);
 
   return (
-    <nav className="sticky z-[99] bg-brand w-full py-4 px-4 md:px-0 text-white">
+    <nav className="sticky z-[99] bg-brand w-full py-1 px-4 md:px-0 text-white">
       <div className="container flex  text-2xl flex-wrap gap-6 items-center justify-between">
         <div className="">
           <Link className="font-logo" to="/">
-            <Logo className="w-32 hover:text-hover" />
+            <Logo className="w-28 hover:text-hover" />
           </Link>
         </div>
         <div

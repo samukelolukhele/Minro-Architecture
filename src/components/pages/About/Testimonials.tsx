@@ -2,6 +2,10 @@ import React from "react";
 import Divider from "../../Divider";
 import Slider from "react-animated-slider";
 import "react-animated-slider/build/horizontal.css";
+import {
+  IoArrowBackCircleOutline,
+  IoArrowForwardCircleOutline,
+} from "react-icons/io5";
 
 const slides = [
   {
@@ -15,15 +19,15 @@ const slides = [
     image: "/images/Testimonial-2.jpg",
     title: "Phenomenal Work",
     message:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sapiente suscipit nemo illo saepe? Eius inventore maxime perferendis adipisci aliquam, sapiente autem nam ducimus, iste, dicta laudantium ipsum optio cumque!",
+      "I've built many high to low end homes and regardless of which type of house I'm building, I always use Minro's services. They always provide me with a consistently breathtaking result. Highly recommend! ",
     author: "Jeremy Gill",
   },
   {
-    image: "/images/Testimonial-2.jpg",
-    title: "Phenomenal Work",
+    image: "/images/Testimonial-3.jpg",
+    title: "Just Amazing",
     message:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sapiente suscipit nemo illo saepe? Eius inventore maxime perferendis adipisci aliquam, sapiente autem nam ducimus, iste, dicta laudantium ipsum optio cumque!",
-    author: "Jeremy Gill",
+      "We wanted to redesign our office so we decided to hire Minro Architecture. Words cannot describe how happy we are with their work.",
+    author: "Anna Hughes",
   },
 ];
 
@@ -33,16 +37,18 @@ const Testimonials = () => {
       <div className="container">
         <div className="flex flex-col justify-center items-center w-full">
           <div className="w-max gap-2 flex flex-col justify-center items-center">
-            <p className="text-3xl text-white text-center text-extralight">
+            <p className="text-3xl font-bold text-white text-center text-extralight">
               Our Happy Clients
             </p>
             <Divider width="w-11/12" border="border-white" />
           </div>
           <Slider
+            previousButton={<IoArrowBackCircleOutline />}
+            nextButton={<IoArrowForwardCircleOutline />}
             classNames={{
               slider: "slider !h-[500px] md:!h-[276px]",
-              previousButton: "previousButton !left-0",
-              nextButton: "nextButton !right-0",
+              previousButton: "previousButton !text-white !text-4xl !left-0",
+              nextButton: "nextButton !text-white !text-4xl !right-0",
             }}
             infinite={true}
           >
@@ -52,6 +58,7 @@ const Testimonials = () => {
                   <img
                     src={slide.image}
                     className="w-[200px] aspect-square rounded-full bg-center object-cover"
+                    alt=""
                   />
                   <div className="flex flex-col justify-center">
                     <div className="flex flex-col items-center md:items-start w-max gap-2">

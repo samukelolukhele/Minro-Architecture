@@ -14,7 +14,9 @@ const ContactSection = () => {
         <p className="text-tDark text-center text-xl">
           We look forward to hearing from you
         </p>
-        <Button color="primary">Contact</Button>
+        <Button to="/contact" color="primary">
+          Contact
+        </Button>
       </div>
     </div>
   );
