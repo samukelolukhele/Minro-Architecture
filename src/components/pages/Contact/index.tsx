@@ -30,10 +30,10 @@ const Contact = () => {
   const closeModal = () => setModal(false);
 
   return (
-    <div className="relative overflow-y-scroll bg-[url(/images/Contact-bg.jpg)] flex items-center justify-center w-full bg-center h-screen md:min-h-screen md:h-auto py-10 bg-cover">
+    <div className="relative overflow-y-scroll bg-[url(/images/Contact-bg.jpg)] flex items-center justify-center w-full bg-center min-h-screen md:min-h-screen md:h-auto py-10 bg-cover">
       {modal && <Modal close={closeModal} bgClick={closeModal} />}
       <div className="absolute opacity-40 w-full h-full bg-black" />
-      <div className="relative z-2 flex flex-col-reverse gap-10 md:gap-0 md:flex-row md:h-[450px] w-10/12 lg:w-[700px] ">
+      <div className="relative z-2 flex flex-col-reverse gap-10 md:gap-0 md:flex-row md:h-[450px] w-10/12 lg:w-[700px]">
         <div className="flex flex-col md:w-5/12 h-full text-white">
           <div className="rounded-t-lg md:rounded-none flex items-center justify-center py-8 md:py-0 md:h-5/6 bg-brand w-full">
             <Logo className="w-[250px]" />
@@ -53,11 +53,11 @@ const Contact = () => {
           <form className="w-max h-full mx-auto md:mx-10 flex flex-col items-start justify-center gap-6">
             <div className="flex flex-col gap-2">
               <label>Name</label>
-              <Input placeholder="Name" onChange={handleData} />
+              <Input placeholder="Enter your full name" onChange={handleData} />
             </div>
             <div className="flex flex-col gap-2">
               <label>Email</label>
-              <Input placeholder="Email" onChange={handleData} />
+              <Input placeholder="Enter your email" onChange={handleData} />
             </div>
             <div className="w-full flex flex-col gap-2">
               <label>Message</label>
@@ -65,7 +65,7 @@ const Contact = () => {
                 className="px-2 py-2 rounded w-full"
                 rows={3}
                 onChange={handleData}
-                placeholder="Message"
+                placeholder="Enter your message"
               ></textarea>
             </div>
             <button
