@@ -23,7 +23,7 @@ const SideSection = ({ direction, header, body, image }: SProps) => {
           data-aos-duration="1000"
           className="flex flex-col items-center md:items-start text-center md:text-left gap-4 w-[300px] my-auto"
         >
-          <h3 className="text-5xl">{header}</h3>
+          <h3 className="text-4xl md:text-5xl">{header}</h3>
           <hr className="w-full border-[1.5px] border-bDark mb-4" />
           <p className="text-tSecondary text-xl">{body}</p>
         </div>

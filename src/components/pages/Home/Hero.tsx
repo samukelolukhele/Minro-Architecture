@@ -17,7 +17,7 @@ const Hero = () => {
             <h1
               data-aos="fade-up"
               data-aos-duration="1000"
-              className="text-6xl font-light"
+              className="text-4xl md:text-6xl font-light"
             >
               Bring Your Vision To Life.
             </h1>
