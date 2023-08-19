@@ -8,7 +8,7 @@ const CTA = () => {
     Aos.init();
   }, []);
   return (
-    <div className="relative w-full h-[50vh] md:h-screen lg:h-[90vh] bg-[url(/images/About-2.jpg)] flex items-center justify-center bg-center bg-fixed bg-cover bg-no-repeat">
+    <div className="relative w-full h-full py-20 md:py-0 md:h-screen lg:h-[90vh] bg-[url(/images/About-2.jpg)] flex items-center justify-center bg-center bg-fixed bg-cover bg-no-repeat">
       <div className="absolute bg-black w-full h-full opacity-30"></div>
       <div
         data-aos="flip-right"

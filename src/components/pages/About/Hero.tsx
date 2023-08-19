@@ -10,7 +10,7 @@ const Hero = () => {
   }, []);
   return (
     <div className="container !py-10">
-      <div className=" my-10 container border-2 border-tDark flex justify-center lg:justify-start items-center">
+      <div className="mx-4 md:mx-0 my-10  border-2 border-tDark flex justify-center lg:justify-start items-center">
         <div className="text-center lg:text-left py-14 md:m-10 flex justify-center items-center lg:items-start lg:justify-start flex-col md:text-2xl w-11/12 lg:w-7/12 gap-6">
           <h1
             data-aos="fade-up"
