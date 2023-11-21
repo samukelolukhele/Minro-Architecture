@@ -17,15 +17,23 @@ const Navbar = () => {
         </div>
         <div
           className="md:hidden child:cursor-pointer"
-          onClick={() => setMenu(!menu)}
+          onClick={() => setMenu(true)}
         >
-          {menu ? <AiOutlineClose /> : <CiMenuBurger />}
+          {!menu && <CiMenuBurger />}
         </div>
         <div
-          className={`md:flex ${
-            menu ? "flex" : "hidden"
-          }  gap-10 text-xl ease-in duration-500 font-light items-center `}
+          className={`flex md:relative md:h-fit md:w-fit md:z-0 md:opacity-100 flex-col md:flex-row justify-center md:justify-start ${
+            menu
+              ? "absolute top-0 left-0 right-0 bottom-0 bg-brand h-screen w-screen z-50"
+              : "absolute top-0 left-0 right-0 z-[-50] h-96 opacity-0 pointer-events-none"
+          }  gap-10 text-xl duration-1000 transition-expand font-light items-center`}
         >
+          {menu && (
+            <AiOutlineClose
+              className="absolute top-8 right-8 text-3xl"
+              onClick={() => setMenu(false)}
+            />
+          )}
           <Link
             className="hover:text-hover"
             to="/"

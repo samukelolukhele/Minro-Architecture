@@ -16,6 +16,9 @@ module.exports = {
         main: ["Lato", "sans-serif"],
         logo: ["Rammetto One", "cursive"],
       },
+      transitionProperty: {
+        expand: "width , height",
+      },
     },
   },
   plugins: [],

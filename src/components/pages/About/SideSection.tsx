@@ -11,9 +11,9 @@ const SideSection = () => {
     <div className="pt-10 pb-20 px-4">
       <div className="container">
         <div className="w-full flex items-center justify-center gap-6 flex-col  lg:flex-row lg:justify-between">
-          <div className="hidden lg:inline-block w-[200px] h-[350px] aspect-spuare lg:inline-block bg-brand mr-[-240px]"></div>
+          <div className="hidden w-[200px] h-[350px] aspect-spuare lg:inline-block bg-brand mr-[-240px]"></div>
           <img
-            src="/images/About-1.jpg"
+            src="/images/About-1.webp"
             alt=""
             className="w-full bg-center object-cover lg:w-5/12 h-[600px]"
           />
