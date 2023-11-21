@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Divider from "../../Divider";
 import Button from "../../Button";
 import Aos from "aos";
@@ -9,12 +9,13 @@ const Hero = () => {
     Aos.init();
   }, []);
   return (
-    <div className="container !py-10">
+    <div className="container !py-10" id="about-hero">
       <div className="mx-4 md:mx-0 my-10  border-2 border-tDark flex justify-center lg:justify-start items-center">
         <div className="text-center lg:text-left py-14 md:m-10 flex justify-center items-center lg:items-start lg:justify-start flex-col md:text-2xl w-11/12 lg:w-7/12 gap-6">
           <h1
             data-aos="fade-up"
             data-aos-duration="1000"
+            data-aos-anchor="#about-hero"
             className="font-bold text-4xl md:text-5xl"
           >
             Industry-leading expertise
@@ -24,6 +25,7 @@ const Hero = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="300"
+            data-aos-anchor="#about-hero"
             className="text-tDark lg:text-base"
           >
             We are proud to provide industry-leading expertise when it comes to
@@ -35,6 +37,7 @@ const Hero = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="500"
+            data-aos-anchor="#about-hero"
             color="primary"
             to="/contact"
             className="text-base"

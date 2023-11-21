@@ -12,21 +12,21 @@ import {
 
 const slides = [
   {
-    image: "/images/Testimonial-1.jpg",
+    image: "/images/Testimonial-1.webp",
     title: "Great Experience",
     message:
       "I recently had the pleasure of working with Minro Architecture and they exceeded all my expectations. The team was so professional, creative and knowledgeable.",
     author: "Mary Ellsworth",
   },
   {
-    image: "/images/Testimonial-2.jpg",
+    image: "/images/Testimonial-2.webp",
     title: "Phenomenal Work",
     message:
       "I've built many high to low end homes and regardless of which type of house I'm building, I always use Minro's services. They always provide me with a consistently breathtaking result. Highly recommend! ",
     author: "Jeremy Gill",
   },
   {
-    image: "/images/Testimonial-3.jpg",
+    image: "/images/Testimonial-3.webp",
     title: "Just Amazing",
     message:
       "We wanted to redesign our office so we decided to hire Minro Architecture. Words cannot describe how happy we are with their work.",
