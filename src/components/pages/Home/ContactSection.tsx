@@ -4,7 +4,7 @@ import Button from "../../Button";
 
 const ContactSection = () => {
   return (
-    <div className="relative flex justify-center items-center w-full h-[350px] bg-fixed bg-[url(/images/Home-Contact.jpg)] bg-cover bg-center bg-no-repeat">
+    <div className="relative flex justify-center items-center w-full h-[350px] bg-[url(/images/Home-Contact.jpg)] bg-cover bg-center bg-no-repeat">
       <div className="absolute bg-black w-full h-full opacity-80"></div>
       <div className="relative flex flex-col items-center gap-2 md:gap-4 z-2 text-white mx-6 md:mx-0">
         <h4 className="text-2xl md:text-4xl md:w-[600px] text-center">

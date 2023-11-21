@@ -15,24 +15,24 @@ const Home = () => {
       />
       <SideSection
         header="What we do"
-        direction="md:flex-row"
+        direction="lg:flex-row"
         body="Our goal is to make sure that you get the best possible outcome from
         your project, whether it's a residential building or a commercial
         space."
-        image="/images/Side-Section-1.jpg"
+        image="/images/Side-Section-1.webp"
       />
       <SideSection
         header="How we do it"
-        direction="md:flex-row-reverse"
+        direction="lg:flex-row-reverse"
         body="With our expertise in both traditional and modern architecture, we can provide a comprehensive range of services that will meet your exact requirements."
-        image="/images/Side-Section-2.jpg"
+        image="/images/Side-Section-2.webp"
       />
       <BoldTextSection
-        mainText="Dream homes we brought to life"
+        mainText="Dreams we brought to life"
         minorText="Our Portfolio"
       />
       <PortfolioSection />
-      <ContactSection />
+      {/* <ContactSection /> */}
     </>
   );
 };

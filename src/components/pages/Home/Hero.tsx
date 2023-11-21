@@ -9,7 +9,7 @@ const Hero = () => {
     Aos.init();
   }, []);
   return (
-    <div className="relative w-full h-[80vh] md:h-screen bg-[url(/images/hero.jpg)] bg-center bg-cover bg-no-repeat">
+    <div className="relative w-full h-[80vh] md:h-screen bg-[url(/images/hero.webp)] bg-center bg-cover bg-no-repeat">
       <div className="absolute bg-black opacity-50 h-full w-full z-2"></div>
       <div className="relative container h-full flex items-center justify-center md:justify-start text-center md:text-left z-10">
         <div className="md:w-[460px] w-min px-4 md:px-0 flex flex-col items-center md:items-start gap-4 text-white">
