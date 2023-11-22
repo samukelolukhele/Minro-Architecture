@@ -10,9 +10,9 @@ type MProps = {
 
 const Modal = ({ bgClick, close }: MProps) => {
   return (
-    <div className="w-screen flex items-center justify-center h-screen fixed z-[100]">
+    <div className="top-0 right-0 bottom-0 left-0 flex items-center justify-center fixed z-[100]">
       <div
-        className="fixed bg-black opacity-70 w-full h-full h-[200vh] cursor-pointer"
+        className="fixed bg-black opacity-70 w-full top-0 left-0 right-0 bottom-0 cursor-pointer"
         onClick={bgClick}
       />
       <div className="relative p-20 z-20  bg-black text-white w-10/12 lg:w-5/12 text-center border-brand border-2 flex flex-col items-center gap-8">
