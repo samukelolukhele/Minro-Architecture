@@ -23,7 +23,7 @@ const CTA = () => {
         >
           Let’s Make Something Beautiful.
         </h1>
-        <Button to="/" color="primary">
+        <Button to="/contact" color="primary">
           Contact
         </Button>
       </div>
